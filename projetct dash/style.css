@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,300&family=Roboto:ital,wght@1,500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* 1st chart */
+.box{
+    position: relative;
+    height: 750px;
+    right: 600px;
+    transform-style: preserve-3d;
+    animation: animate 16s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotateX(-20deg) rotateY(360deg);
+    }
+    100%
+    {
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+}
+.box div{
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+}
+.box div.block span
+{
+    position: absolute;
+    left: calc(10% - 10px);
+    width: 50px;
+    height: 200px;
+    background:#78ADD2;
+    transform: rotatey(calc(90deg * var(--i)))translateZ(24px);
+}
+.box:hover div.block span
+{   
+    background: #78ADD2;
+    filter: drop-shadow(0 0 50px #78ADD2);
+}
+
+/* 2nd chart */
+
+.about{
+     position: relative;
+     height: 400px;
+     right: 400px;
+    transform-style: preserve-3d;
+    animation: animate 16s linear infinite;
+} 
+@keyframes animate
+{
+    0%
+    {
+        transform: rotateX(-20deg) rotateY(360deg);
+    }
+    100%
+    {
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+}
+.about div{
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+}
+.about div.dis span
+{
+    position: absolute;
+    left: calc(10% - 10px);
+    width: 50px;
+    height: 200px;
+    background:#0072AA;
+    transform: rotatey(calc(90deg * var(--i)))translateZ(24px);
+}
+.about:hover div.dis span
+{
+    background: #0072AA;
+    filter: drop-shadow(0 0 50px #0072AA);
+}
+
+/* 3rd chart */
+.contect{
+    position: relative;
+   height: 50px;
+   left: 200px;
+   transform-style: preserve-3d;
+   animation: animate 16s linear infinite;
+} 
+@keyframes animate
+{
+   0%
+   {
+       transform: rotateX(-20deg) rotateY(360deg);
+   }
+   100%
+   {
+       transform: rotateX(-20deg) rotateY(0deg);
+   }
+}
+.contect div{
+   position: absolute;
+   inset: 0;
+   transform-style: preserve-3d;
+}
+.contect div.dise span
+{
+   position: absolute;
+   left: calc(10% - 10px);
+   width: 50px;
+   height: 200px;
+   background:#A4D0A0;
+   transform: rotatey(calc(90deg * var(--i)))translateZ(24px);
+}
+.contect:hover div.dise span
+{
+   background: #A4D0A0;
+   filter: drop-shadow(0 0 50px #A4D0A0);
+}
+
+
+/* 4th chart */
+.detail{
+    position: relative;
+   height: 500px;
+   left: 400px;
+   transform-style: preserve-3d;
+   animation: animate 16s linear infinite;
+} 
+@keyframes animate
+{
+   0%
+   {
+       transform: rotateX(-20deg) rotateY(360deg);
+   }
+   100%
+   {
+       transform: rotateX(-20deg) rotateY(0deg);
+   }
+}
+.detail div{
+   position: absolute;
+   inset: 0;
+   transform-style: preserve-3d;
+}
+.detail div.dises span
+{
+   position: absolute;
+   left: calc(10% - 10px);
+   width: 50px;
+   height: 200px;
+   background:#21AA47;
+   transform: rotatey(calc(90deg * var(--i)))translateZ(24px);
+}
+.detail:hover div.dises span
+{
+   background: #21AA47;
+   filter: drop-shadow(0 0 50px #21AA47);
+}
